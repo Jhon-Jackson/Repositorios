@@ -28,12 +28,13 @@
     <p>Ja me livrei da maldição!</p> <!-- comentario em HTML -->
     
     <script>
-        var n1 = Number.parseInt(window.prompt('Digite um numero: '))
+        var n1 = Number(window.prompt('Digite um numero: '))
         var n2 = Number.parseFloat(window.prompt('Digite outro numero: '))
-        window.alert('A soma dos valores é '+ (n1 + n2))
+        window.alert('A soma dos valores é'  ${n1} ${n2})
         // number + number para adição
         // string + string para concatenação
-       
+       // converter para string. String(n) n.toString()
+       // ${}´ usa template string
     </script>
 </body>
 </html>
