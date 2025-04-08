@@ -18,9 +18,18 @@
     </h1>
     <p>Aqui vai o resultado</p>
     <p>Aprendendo a usar o <strong>DOM</strong> em javaScript</p>
-    <div>clique em min</div>
+    <div id='msg'>clique em min agora</div>
+    <div class="msg">Carregando ...</div>
     <script>
-
+        var p1 = window.document.getElementsByTagName('p')[0]
+        var p2 = document.getElementsByTagName('p')[1]
+        p1.style.color = 'red'
+        p2.style.color = 'black'
+        window.document.write('Esta escrito assim: ' + p1.innerHTML)
+        var d = window.document.querySelector('div#msg')// # para id.
+        d.style.background = 'blue'
+        var d1 = document.querySelector('div.msg')// . para class
+        d1.style.color = 'green'
     </script>
 </body>
 </html>
