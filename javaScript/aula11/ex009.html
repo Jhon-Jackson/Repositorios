@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consulta Pais</title>
+    <style>
+        p {
+            background-color: aqua;
+        }
+        body {
+            background-color: rgb(223, 106, 106);
+            font: normal 20pt Arial;
+        }
+        input {
+            font: normal 15pt Arial;
+        }
+    </style>
+</head>
+<body>
+    <h1>Consultas Pais</h1>
+    Digite seu Pais <input type="text" name="txtp" id="txtp">
+    <input type="button" value="Verificar" onclick="consulta()">
+    <div id="res"></div>
+
+    <script>
+        function consulta() {
+            var pais = document.getElementById('txtp')
+            var res = document.querySelector('div#res')
+            var txt = String(pais.value)
+            res.innerHTML = `<p>Sua nacionalidade é do Pais  <strong>${txt}</strong>!</p>`
+            if (txt.toLocaleUpperCase() == 'BRASIL') {
+                res.innerHTML += `<p>Sua Nacionalidade é <strong>Brasileiro!</strong> Seja Bem vindo</p>`        
+            } else {
+                res.innerHTML += `<p>Você é <strong>Estrangeiro</strong>, Deportado!</p>`
+            }
+        }
+    </script>
+</body>
+</html>
