@@ -3,9 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Midias em HTML5</title>
 </head>
 <body>
-    
+    <h1>Imagem dinânmica</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou siplesmente aumente e diminua o tamanho do seu navegador.</p>
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="Imagem flexivel">
+    </picture>
+    <h1>Reproduzindo Áudio </h1>
+    <a href="pag02.html" target="_self" rel="next">Clique aqui</a>
 </body>
 </html>
