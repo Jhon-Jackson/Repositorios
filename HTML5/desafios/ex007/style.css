@@ -1,0 +1,23 @@
+body {
+    background-color: black;
+    width: 750px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+section {
+    width: 750px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgb(41, 37, 37);
+    padding: center;
+}
+
+h1 {
+    color: #fff9f9;
+    width: 600px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
