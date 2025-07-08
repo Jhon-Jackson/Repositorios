@@ -1,7 +1,9 @@
 tags css
+
 Plano de fundo
 background	Define as propriedades do estilo de fundo
 background-color	Define a cor de fundo
+
 Bordas
 border	Define todas as propriedades de estilo de borda de uma vez
 border-color	Define a cor da borda
@@ -23,6 +25,7 @@ border-top	Define todas as propriedades de estilo da borda superior de uma vez
 border-top-color	Define a cor da borda superior
 border-top-style	Define o estilo da linha da borda superior
 border-top-width	Define a largura da linha da borda superior
+
 Elemento
 display	Especifica a saída do elemento e a exibição visual na página
 height	Define a altura do elemento
@@ -35,6 +38,7 @@ font-size	Define o tamanho da fonte
 font-style	Define o estilo da fonte, por exemplo, normal ou italic
 font-variant	Determina como as letras minúsculas devem ser representadas, ou seja, se deve deixá-las inalteradas (normal) ou aplicar versaletes (caixas minúsculas)
 font-weight	Define o peso da fonte
+
 List
 list-style-type	Define o tipo de marcador para cada elemento da lista
 Table
