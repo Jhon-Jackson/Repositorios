@@ -5,19 +5,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fontes em CSS</title>
     <style>
-        body {
-            font-family: 'Courier New', Courier, monospace, sans-serif;
+        * {
+            height: 100%;
+            font-family: Georgia, 'Times New Roman', Times, sans-serif;
+
+        }
+        body { 
+            /*medidas Absolutas
+            cm, mm, in, px, pt, pc
+            
+            Medidas Relativas
+            em, ex, rem, vw, vh, % 
+            16px(Tamanho padrao) geralmente = 1em
+            recomendação usar, px ou em
+            */ 
+            background-image: linear-gradient(black, #fff, red);
+        }
+        main {
+            background-color: #fff;
+            width: 700px;
+            height: 700px;
+            margin: auto;
+            box-shadow: 2px 2px 3px black;
+            padding: 15px;
         }
         h1, h2 {
-            font-family: Georgia, 'Times New Roman', Times, sans-serif;
+            
         }
     </style>
 </head>
 <body>
-    <h1>Trabalhando com fontes</h1>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda consequuntur autem beatae dignissimos quia aut odio ut fugit ipsam enim, necessitatibus similique atque, harum, debitis nam corporis? Accusantium, nobis deleniti?</p>
-    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Culpa quos corporis earum praesentium, eum omnis, eos ducimus quo animi consequuntur fugit dolores incidunt, minus enim suscipit sit dicta nobis optio.</p>
-    <h2>Subtítulo do exercicio</h2>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis sequi officia iusto maxime autem earum tenetur aliquid quia, modi commodi vel quidem eius voluptatum consectetur hic, ut exercitationem natus assumenda.</p>
+    <main>
+        <h1>Trabalhando com fontes</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda consequuntur autem beatae dignissimos quia aut odio ut fugit ipsam enim, necessitatibus similique atque, harum, debitis nam corporis? Accusantium, nobis deleniti?</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Culpa quos corporis earum praesentium, eum omnis, eos ducimus quo animi consequuntur fugit dolores incidunt, minus enim suscipit sit dicta nobis optio.</p>
+        <h2>Subtítulo do exercicio</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis sequi officia iusto maxime autem earum tenetur aliquid quia, modi commodi vel quidem eius voluptatum consectetur hic, ut exercitationem natus assumenda.</p>
+    </main>
 </body>
 </html>
