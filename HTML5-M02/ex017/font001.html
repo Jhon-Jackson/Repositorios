@@ -18,8 +18,13 @@
             em, ex, rem, vw, vh, % 
             16px(Tamanho padrao) geralmente = 1em
             recomendação usar, px ou em
+            weight = peso, width = largura, height = altura
             */ 
             background-image: linear-gradient(to right,black, #fff, red);
+            font-size: 1em; /*Tamanho da Letra*/
+            font-weight: bolder; /*Negrito (lighter, normal, bold, bolder)*/
+            font-style: italic;  /*estilo italico*/
+            text-decoration: underline; /*Texto Sublinhado*/
         }
         main {
             background-color: #fff;
@@ -31,6 +36,16 @@
             text-align: center;
         }
         h1, h2 {
+            /* shortthand font
+            - font-style -> font-weight -> font-size -> font-family
+
+            font-family: 'Work Sans', sans-serif ;
+            font-size: 3em; 
+            font-weight: bolder;
+            font-style: italic; 
+            */
+            font: italic bolder 3em 'Work Sans', sans-serif;
+            
             
         }
         p {
