@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*
+            #  = id
+            .  = class
+            :  = pseudo-class
+            :: = pseudo-element
+            >  = children
+        */
+        div {
+            width: 230px;
+            height: 85px;
+            border: 1px solid black;
+            background-color: aquamarine;
+        }
+        a {
+            color: red;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        a:visited {
+            color: blueviolet;
+        }
+        a:hover {
+            text-decoration: underline;
+            color: black;
+        }
+        a:active {
+            color: aqua;
+        }
+        a::after {
+            content: ' [link]';
+            text-decoration: none;
+            font-weight: normal;
+            color: darkgray;
+        }
+        .especial::before {
+            content: '--> ';
+        }
+        .especial::after {
+            content: ' <--';
+        }
+    </style>
+</head>
+<body>
+    <h1>Personalizando Links</h1>
+    <div>
+        <ul>
+            <li><a href="https://github.com/Jhon-Jackson?tab=repositories" target="_blank">Repositorio GitHub</a></li>
+            <li><a href="https://www.youtube.com/@Falcao_PlayGamer" target="_blank" class="especial">Canal do Youtube</a></li>
+            <li><a href="https://www.twitch.tv/falcao_s" target="_blank">Site Canal Twitch</a></li>
+        </ul>
+    </div>
+</body>
+</html>
