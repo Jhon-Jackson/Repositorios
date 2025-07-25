@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        body {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            background-color: dimgray;
+            margin: 0px;
+        }
+        header {
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+        }
+        nav {
+            background-color: aqua;
+            padding: 4px;
+        }
+        nav > a {
+            text-decoration: none;
+            color: beige;
+            font-weight: bold;
+            margin-right: 25px;
+        }
+        nav > a:hover {
+            text-decoration: underline;
+            color: black;
+        }
+        article {
+            background-color: antiquewhite;
+            padding: 5px;
+        }
+        article > aside {
+            background-color: bisque;
+        }
+        footer {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 2px;
+            margin: 0px;
+        }
+        section#assuntos {
+            background-color: aquamarine;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu site</h1>
+        <nav>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+        </nav>
+    </header>
+    <main>
+        <section id="assuntos">
+            <p> Esportes Politica e Tecnologia</p>
+        </section>
+        <section id="noticias">
+            <article>
+                <h2>Noticia sobre o Brasil</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laudantium, autem nemo facere fugiat velit cupiditate, maiores veritatis magni repellat debitis esse pariatur asperiores et distinctio animi dolorum cumque reprehenderit minus!</p>
+                <aside>
+                    <p>Artigo escrito por josé da silva</p>
+                </aside>
+            </article>
+            <article>
+
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>Desenvolvido Por Jhon Jackson</p>
+    </footer>
+</body>
+</html>
