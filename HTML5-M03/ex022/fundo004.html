@@ -6,12 +6,14 @@
     <title>Posicionamento</title>
     <style>
         body {
-            height: 98vh;
+            height: 97.5vh;
             border: dashed black;
             background-image: url("https://gustavoguanabara.github.io/html-css/imagens/mascote.png");
             background-size: 100px;
             background-repeat: no-repeat;
             background-position: center center;
+            position: relative;
+            display: grid;
             
         }
         div.bloco {
@@ -20,27 +22,46 @@
             width: 100px;
             background-image: url("https://gustavoguanabara.github.io/html-css/imagens/mascote.png");
             background-repeat: no-repeat;
-            border: 2px solid black;
-            display: inline-block;
+            position: relative;
 
         }
-        div#q1 {
-            margin-right: auto;
-            position: relative right;
+        header {
+            display: flex;
+            justify-content: space-between;
             
         }
-        div#q2 {
-            margin-right: 60%;
-            position: ;
-            
+        
+        footer {
+            display: flex;
+            justify-content: space-between;
+            bottom: 0%;
+           
         }
+            
+        footer div#q3 {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+
+        }
+        footer div#q4 {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+        }
+       
     </style>
 </head>
-<body>
-    <div class="bloco" id="q1"></div>
-    <div class="bloco" id="q2"></div>
-    <div class="bloco" id="q3"></div>
-    <div class="bloco" id="q4"></div>
+<body> 
+    <header>
+        <div class="bloco" id="q1"></div>
+        <div class="bloco" id="q2"></div>
+    </header>
+    <footer class="fixarRodape">
+        <div class="bloco" id="q3"></div>  
+        <div class="bloco" id="q4"></div>
+    </footer>
+    
     
     
 </body>
