@@ -1,0 +1,3 @@
+Shorthand - background
+    color > imgage > position > repeat > [size] > attachment
+    (background: black url() center center no-repeat cover fixed)
