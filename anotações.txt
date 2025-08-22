@@ -1,3 +1,38 @@
 Shorthand - background
     color > imgage > position > repeat > [size] > attachment
     (background: black url() center center no-repeat cover fixed)
+
+emment: envelope com a abreviatura
+    Ctlr+shift+P
+
+medidas Absolutas
+    cm, mm, in, px, pt, pc
+Medidas Relativas
+    em, ex, rem, vw, vh, % 
+    16px(Tamanho padrao) geralmente = 1em
+recomendação usar, px ou em
+    weight = peso, width = largura, height = altura
+shortthand font
+    - font-style -> font-weight -> font-size -> font-family
+    - font: italic bolder 3em 'Work Sans', sans-serif;
+
+@import url('https://fonts.googleapis.com/css2?family=Bitcount+Prop+Single:slnt,wght,CRSV,ELSH,ELXP@-8..0,100..900,0..1,0..100,0..100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Meow+Script&display=swap');
+@font-face {
+    font-family: 'video';
+    src: url('Fonts/video games.ttf') format('truetype');
+}
+Tipos de format()
+    - opentype (otf)
+    - truetype (ttf)
+    - embedded-opentype
+    - truetype-aat (apple advance Typography)
+    - svg
+
+em HTML é id = em CSS é #   (só pod um elemento)
+em HTML é class = em CSS é . (pode vários elementos)
+#  = id
+.  = class
+:  = pseudo-class
+:: = pseudo-element
+>  = children
