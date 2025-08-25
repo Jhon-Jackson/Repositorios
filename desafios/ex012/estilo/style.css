@@ -52,6 +52,18 @@ section.imagem {
     color: white;
 }
 
+section#UM {
+    background-image: url(../imagens/background001.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+section#Dois {
+    background-size: cover;
+    background: black url(../imagens/background002.jpg) center center no-repeat fixed;
+}
 section.imagem > p {
     width: 400px;
     background-color: rgba(0, 0, 0, 0.274);
