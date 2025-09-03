@@ -43,4 +43,7 @@ em HTML é class = em CSS é . (pode vários elementos)
         TABLE ROW = linha de tabela
             TABLE HEADER =  cabeçalho de tabela
             TABLE DATA = dado de tabela
+
+ text-align: center;     /* Alinhamento Horizontal */
+ vertical-align: middle; /* Alinhamento vertical */
 -->
