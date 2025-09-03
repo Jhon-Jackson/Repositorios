@@ -46,4 +46,13 @@ em HTML é class = em CSS é . (pode vários elementos)
 
  text-align: center;     /* Alinhamento Horizontal */
  vertical-align: middle; /* Alinhamento vertical */
+
+  ANATOMIA PARA TABELAS GRANDES
+        TABLE
+            THEAD
+                TR, TD, TH
+            TBODY
+                TR, TD ,TH
+            TFOOT
+                TR, TD, TH
 -->
