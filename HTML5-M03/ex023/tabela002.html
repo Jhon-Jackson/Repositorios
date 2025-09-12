@@ -13,15 +13,37 @@
        table {
         width: 500px;
         border-collapse: collapse;
+        position: relative;
        }
+
        td, th {
         border: 1px solid black;
         padding: 10px;
        }
 
+       caption {
+        font-size: 1.5em;
+        font-weight: bold;
+        padding: 10px;
+        background-color: lightgray;
+       }
+
        thead, tfoot {
         background-color: gray;
         color: white;
+       }
+
+       thead > tr > th {
+        position: sticky;
+        top: -1px;
+        background-color: rgb(133, 130, 130);
+       }
+       tbody > tr:nth-child(odd) { /* 2n-1*/
+        background-color: white;
+       }
+
+       tbody > tr:nth-child(even) { /* 2n */
+        background-color: lightgray;
        }
        td.num {
         text-align: right;
@@ -33,6 +55,7 @@
     <!-- 
         ANATOMIA PARA TABELAS GRANDES
         TABLE
+            CAPTION
             THEAD
                 TR, TD, TH
             TBODY
@@ -41,10 +64,11 @@
                 TR, TD, TH
     -->
     <table>
+        <caption>Pooulação das Unidades Federativas</caption>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 90px;">População</th>
             </tr>
         </thead>
         <tbody>
@@ -159,10 +183,46 @@
         </tbody>
         <tfoot>
             <tr>
-                <th>Total de Habitantes</th>
+                <th scope="row">Total de Habitantes</th>
                 <td class="num"><strong>210 147 125</strong></td>
             </tr>
         </tfoot>
     </table>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus earum enim facilis dolore corrupti aliquam labore non ut illum reiciendis quo et, tempora, officiis perspiciatis? Fugiat numquam nulla beatae minus!
+    Minus porro dolores quisquam illo ipsa amet aperiam, sequi necessitatibus, unde facere atque, eligendi nulla nobis qui ipsam quasi repudiandae laboriosam hic dolorum in perspiciatis nemo. Obcaecati mollitia accusantium ut?
+    Eligendi aliquid assumenda veritatis odit ullam provident, exercitationem repellat ratione fuga quos minus modi distinctio quisquam nesciunt doloremque non pariatur reiciendis praesentium dicta. Nostrum fuga ipsa facilis, suscipit porro sequi.
+    Modi, dolorem, iure autem assumenda explicabo maxime placeat sit suscipit quasi animi accusamus magnam totam alias nobis. Impedit sit tempore aut similique, hic fugiat itaque possimus reprehenderit eligendi esse at?
+    Vero officia ullam numquam eius ratione deleniti harum quod quas culpa enim delectus recusandae architecto omnis eum temporibus itaque voluptatem optio vitae ipsa in, aliquid fuga! Quibusdam saepe iste consectetur.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus earum enim facilis dolore corrupti aliquam labore non ut illum reiciendis quo et, tempora, officiis perspiciatis? Fugiat numquam nulla beatae minus!
+    Minus porro dolores quisquam illo ipsa amet aperiam, sequi necessitatibus, unde facere atque, eligendi nulla nobis qui ipsam quasi repudiandae laboriosam hic dolorum in perspiciatis nemo. Obcaecati mollitia accusantium ut?
+    Eligendi aliquid assumenda veritatis odit ullam provident, exercitationem repellat ratione fuga quos minus modi distinctio quisquam nesciunt doloremque non pariatur reiciendis praesentium dicta. Nostrum fuga ipsa facilis, suscipit porro sequi.
+    Modi, dolorem, iure autem assumenda explicabo maxime placeat sit suscipit quasi animi accusamus magnam totam alias nobis. Impedit sit tempore aut similique, hic fugiat itaque possimus reprehenderit eligendi esse at?
+    Vero officia ullam numquam eius ratione deleniti harum quod quas culpa enim delectus recusandae architecto omnis eum temporibus itaque voluptatem optio vitae ipsa in, aliquid fuga! Quibusdam saepe iste consectetur.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus earum enim facilis dolore corrupti aliquam labore non ut illum reiciendis quo et, tempora, officiis perspiciatis? Fugiat numquam nulla beatae minus!
+    Minus porro dolores quisquam illo ipsa amet aperiam, sequi necessitatibus, unde facere atque, eligendi nulla nobis qui ipsam quasi repudiandae laboriosam hic dolorum in perspiciatis nemo. Obcaecati mollitia accusantium ut?
+    Eligendi aliquid assumenda veritatis odit ullam provident, exercitationem repellat ratione fuga quos minus modi distinctio quisquam nesciunt doloremque non pariatur reiciendis praesentium dicta. Nostrum fuga ipsa facilis, suscipit porro sequi.
+    Modi, dolorem, iure autem assumenda explicabo maxime placeat sit suscipit quasi animi accusamus magnam totam alias nobis. Impedit sit tempore aut similique, hic fugiat itaque possimus reprehenderit eligendi esse at?
+    Vero officia ullam numquam eius ratione deleniti harum quod quas culpa enim delectus recusandae architecto omnis eum temporibus itaque voluptatem optio vitae ipsa in, aliquid fuga! Quibusdam saepe iste consectetur.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus earum enim facilis dolore corrupti aliquam labore non ut illum reiciendis quo et, tempora, officiis perspiciatis? Fugiat numquam nulla beatae minus!
+    Minus porro dolores quisquam illo ipsa amet aperiam, sequi necessitatibus, unde facere atque, eligendi nulla nobis qui ipsam quasi repudiandae laboriosam hic dolorum in perspiciatis nemo. Obcaecati mollitia accusantium ut?
+    Eligendi aliquid assumenda veritatis odit ullam provident, exercitationem repellat ratione fuga quos minus modi distinctio quisquam nesciunt doloremque non pariatur reiciendis praesentium dicta. Nostrum fuga ipsa facilis, suscipit porro sequi.
+    Modi, dolorem, iure autem assumenda explicabo maxime placeat sit suscipit quasi animi accusamus magnam totam alias nobis. Impedit sit tempore aut similique, hic fugiat itaque possimus reprehenderit eligendi esse at?
+    Vero officia ullam numquam eius ratione deleniti harum quod quas culpa enim delectus recusandae architecto omnis eum temporibus itaque voluptatem optio vitae ipsa in, aliquid fuga! Quibusdam saepe iste consectetur.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus earum enim facilis dolore corrupti aliquam labore non ut illum reiciendis quo et, tempora, officiis perspiciatis? Fugiat numquam nulla beatae minus!
+    Minus porro dolores quisquam illo ipsa amet aperiam, sequi necessitatibus, unde facere atque, eligendi nulla nobis qui ipsam quasi repudiandae laboriosam hic dolorum in perspiciatis nemo. Obcaecati mollitia accusantium ut?
+    Eligendi aliquid assumenda veritatis odit ullam provident, exercitationem repellat ratione fuga quos minus modi distinctio quisquam nesciunt doloremque non pariatur reiciendis praesentium dicta. Nostrum fuga ipsa facilis, suscipit porro sequi.
+    Modi, dolorem, iure autem assumenda explicabo maxime placeat sit suscipit quasi animi accusamus magnam totam alias nobis. Impedit sit tempore aut similique, hic fugiat itaque possimus reprehenderit eligendi esse at?
+    Vero officia ullam numquam eius ratione deleniti harum quod quas culpa enim delectus recusandae architecto omnis eum temporibus itaque voluptatem optio vitae ipsa in, aliquid fuga! Quibusdam saepe iste consectetur.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus earum enim facilis dolore corrupti aliquam labore non ut illum reiciendis quo et, tempora, officiis perspiciatis? Fugiat numquam nulla beatae minus!
+    Minus porro dolores quisquam illo ipsa amet aperiam, sequi necessitatibus, unde facere atque, eligendi nulla nobis qui ipsam quasi repudiandae laboriosam hic dolorum in perspiciatis nemo. Obcaecati mollitia accusantium ut?
+    Eligendi aliquid assumenda veritatis odit ullam provident, exercitationem repellat ratione fuga quos minus modi distinctio quisquam nesciunt doloremque non pariatur reiciendis praesentium dicta. Nostrum fuga ipsa facilis, suscipit porro sequi.
+    Modi, dolorem, iure autem assumenda explicabo maxime placeat sit suscipit quasi animi accusamus magnam totam alias nobis. Impedit sit tempore aut similique, hic fugiat itaque possimus reprehenderit eligendi esse at?
+    Vero officia ullam numquam eius ratione deleniti harum quod quas culpa enim delectus recusandae architecto omnis eum temporibus itaque voluptatem optio vitae ipsa in, aliquid fuga! Quibusdam saepe iste consectetur.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus earum enim facilis dolore corrupti aliquam labore non ut illum reiciendis quo et, tempora, officiis perspiciatis? Fugiat numquam nulla beatae minus!
+    Minus porro dolores quisquam illo ipsa amet aperiam, sequi necessitatibus, unde facere atque, eligendi nulla nobis qui ipsam quasi repudiandae laboriosam hic dolorum in perspiciatis nemo. Obcaecati mollitia accusantium ut?
+    Eligendi aliquid assumenda veritatis odit ullam provident, exercitationem repellat ratione fuga quos minus modi distinctio quisquam nesciunt doloremque non pariatur reiciendis praesentium dicta. Nostrum fuga ipsa facilis, suscipit porro sequi.
+    Modi, dolorem, iure autem assumenda explicabo maxime placeat sit suscipit quasi animi accusamus magnam totam alias nobis. Impedit sit tempore aut similique, hic fugiat itaque possimus reprehenderit eligendi esse at?
+    Vero officia ullam numquam eius ratione deleniti harum quod quas culpa enim delectus recusandae architecto omnis eum temporibus itaque voluptatem optio vitae ipsa in, aliquid fuga! Quibusdam saepe iste consectetur.</p>
+    
 </body>
 </html>

@@ -1,3 +1,6 @@
+
+Para "voltar" uma linha que foi apagada no VS Code, use o atalho Ctrl+Z
+
 Shorthand - background
     color > imgage > position > repeat > [size] > attachment
     (background: black url() center center no-repeat cover fixed)
@@ -49,6 +52,7 @@ em HTML é class = em CSS é . (pode vários elementos)
 
   ANATOMIA PARA TABELAS GRANDES
         TABLE
+            CAPTION
             THEAD
                 TR, TD, TH
             TBODY
@@ -56,3 +60,11 @@ em HTML é class = em CSS é . (pode vários elementos)
             TFOOT
                 TR, TD, TH
 -->
+ESTILO ZEBRADO
+       tbody > tr:nth-child(odd) { /* 2n-1*/
+        background-color: white;
+       }
+
+       tbody > tr:nth-child(even) { /* 2n */
+        background-color: lightgray;
+       }
